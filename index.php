@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="九霄空間設計,九霄空間室內設計,九霄,九霄室內設計,空間設計,室內設計,室內,設計,design,jiousaio,九霄空間設計jiousaio"/>
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon" />
     <title>九霄空間設計</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
