@@ -56,26 +56,6 @@ $workArr = ['合遠', '君天下', '幸福樂', '明築向陽4F', '明築向陽B
                 <img src="./images/banner-3.jpg" alt="">
             </div>
         </section>
-        <section class="work" id="work">
-            <h2>最近完成的項目</h2>
-            <p class="small-title">Our Finished Projects</p>
-            <div class="projects">
-                <?php for($n=0;$n<count($workArr);$n++){ ?>
-                <div class="project" onclick="openWorkFn(<?php echo $n; ?>)">
-                    <div class="imgBox">
-                        <img src="./images/<?php echo $workArr[$n]; ?>/1.jpg" class="img">
-                        <div class="view">
-                            <div class="icon"> <i class="fa-solid fa-magnifying-glass"></i> </div>
-                        </div>
-                    </div>
-                    <div class="text">
-                        <p>INTERIOR DESIGN</p>
-                        <h3><?php echo $workArr[$n]; ?></h3>
-                    </div>
-                </div>
-                <?php } ?>
-            </div>
-        </section>
         <section class="about" id="about">
             <h2>關於我們</h2>
             <p class="small-title">Jiousaio is An Architecture Agency</p>
@@ -114,6 +94,26 @@ $workArr = ['合遠', '君天下', '幸福樂', '明築向陽4F', '明築向陽B
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="work" id="work">
+            <h2>最近完成的項目</h2>
+            <p class="small-title">Our Finished Projects</p>
+            <div class="projects">
+                <?php for($n=0;$n<count($workArr);$n++){ ?>
+                <div class="project" onclick="openWorkFn(<?php echo $n; ?>)">
+                    <div class="imgBox">
+                        <img src="./images/<?php echo $workArr[$n]; ?>/1.jpg" class="img">
+                        <div class="view">
+                            <div class="icon"> <i class="fa-solid fa-magnifying-glass"></i> </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>INTERIOR DESIGN</p>
+                        <h3><?php echo $workArr[$n]; ?></h3>
+                    </div>
+                </div>
+                <?php } ?>
             </div>
         </section>
         <section class="contact" id="contact">

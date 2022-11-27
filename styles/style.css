@@ -105,7 +105,7 @@ section > .small-title {
 
 .banner {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -177,8 +177,8 @@ section > .small-title {
   background-color: #8C0044;
   color: #fff;
   width: 120px;
-  height: 35px;
-  line-height: 35px;
+  height: 40px;
+  line-height: 40px;
   text-decoration: none;
   box-shadow: 0.1em 0.1em 0.2em #000;
   border-radius: 4px;
@@ -311,11 +311,128 @@ section > .small-title {
   z-index: -1;
 }
 
+.about {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 0;
+  position: relative;
+}
+.about::before {
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  content: "ABOUT";
+  color: #aaa;
+  opacity: 0.05;
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 200px;
+  transform: rotate(15deg) translateY(-50%);
+  z-index: -1;
+}
+.about > h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+}
+.about > .content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.about > .content > img {
+  width: 50%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 500px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .about > .content > img {
+    display: none;
+  }
+}
+.about > .content > .intro {
+  width: 50%;
+  margin-left: 40px;
+  max-width: 500px;
+}
+@media screen and (max-width: 1000px) {
+  .about > .content > .intro {
+    width: 80%;
+    margin-left: 0;
+    max-width: 1000px;
+  }
+}
+.about > .content > .intro small {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #8C0044;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.about > .content > .intro h2 {
+  color: #fff;
+  font-size: 44px;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+.about > .content > .intro h4 {
+  font-size: 15px;
+  color: #aaa;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.about > .content > .intro p {
+  width: 100%;
+  margin-top: 25px;
+  color: #f1f1f1;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+.about > .content > .intro p.english {
+  color: #aaa;
+  transform: scale(0.8) translateX(-12%);
+  margin-top: 0px;
+  line-height: 1.4;
+  letter-spacing: 1.6px;
+}
+.about > .content > .intro .year {
+  display: flex;
+}
+@media screen and (max-width: 300px) {
+  .about > .content > .intro .year {
+    flex-direction: column;
+  }
+}
+.about > .content > .intro .year .item {
+  color: #8C0044;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-right: 35px;
+}
+@media screen and (max-width: 300px) {
+  .about > .content > .intro .year .item {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+.about > .content > .intro .year .item > p {
+  margin-top: 0;
+  padding-left: 8px;
+}
+
 .work {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 150px;
   position: relative;
 }
 .work::before {
@@ -340,10 +457,15 @@ section > .small-title {
   margin-top: 70px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(4, 300px);
   grid-column-gap: 30px;
   grid-row-gap: 40px;
   justify-content: center;
+}
+@media screen and (max-width: 1350px) {
+  .work > .projects {
+    grid-template-columns: repeat(3, 300px);
+  }
 }
 @media screen and (max-width: 1000px) {
   .work > .projects {
@@ -440,126 +562,9 @@ section > .small-title {
   font-weight: 800;
 }
 
-.about {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 150px;
-  position: relative;
-}
-.about::before {
-  position: absolute;
-  top: 50%;
-  left: -15%;
-  content: "ABOUT";
-  color: #aaa;
-  opacity: 0.05;
-  font-weight: 800;
-  font-family: sans-serif;
-  font-size: 200px;
-  transform: rotate(15deg) translateY(-50%);
-  z-index: -1;
-}
-.about > h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 28px;
-}
-.about > .content {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 80px;
-}
-.about > .content > img {
-  width: 40%;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-width: 500px;
-  margin-right: 20px;
-}
-@media screen and (max-width: 1000px) {
-  .about > .content > img {
-    display: none;
-  }
-}
-.about > .content > .intro {
-  width: 60%;
-  margin-left: 40px;
-  max-width: 500px;
-}
-@media screen and (max-width: 1000px) {
-  .about > .content > .intro {
-    width: 80%;
-    margin-left: 0;
-    max-width: 1000px;
-  }
-}
-.about > .content > .intro small {
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #8C0044;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-.about > .content > .intro h2 {
-  color: #fff;
-  font-size: 44px;
-  letter-spacing: 2px;
-  margin-bottom: 2px;
-}
-.about > .content > .intro h4 {
-  font-size: 15px;
-  color: #aaa;
-  letter-spacing: 2px;
-  font-weight: 500;
-}
-.about > .content > .intro p {
-  width: 100%;
-  margin-top: 25px;
-  color: #f1f1f1;
-  font-size: 15px;
-  letter-spacing: 2px;
-  line-height: 1.6;
-}
-.about > .content > .intro p.english {
-  color: #aaa;
-  transform: scale(0.8) translateX(-12%);
-  margin-top: 0px;
-  line-height: 1.4;
-  letter-spacing: 1.6px;
-}
-.about > .content > .intro .year {
-  display: flex;
-}
-@media screen and (max-width: 300px) {
-  .about > .content > .intro .year {
-    flex-direction: column;
-  }
-}
-.about > .content > .intro .year .item {
-  color: #8C0044;
-  font-size: 60px;
-  font-weight: 600;
-  margin-bottom: 0;
-  margin-right: 35px;
-}
-@media screen and (max-width: 300px) {
-  .about > .content > .intro .year .item {
-    margin: 0;
-    margin-bottom: 15px;
-  }
-}
-.about > .content > .intro .year .item > p {
-  margin-top: 0;
-  padding-left: 8px;
-}
-
 .contact {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   margin-top: 150px;
   position: relative;
