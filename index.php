@@ -41,7 +41,7 @@ $workArr = ['合遠', '君天下', '幸福樂', '明築向陽4F', '明築向陽B
             <div class="intro">
                 <h1>九霄空間室內設計</h1>
                 <p>JIOUSAIO INTERIOR DESIGN</p>
-                <a href="javascript:;"> <p>VIEW PROJECT</p> </a>
+                <a href="#work"> <p>VIEW PROJECT</p> </a>
             </div>
             <div id="docs">
                 <div class="doc"></div>
