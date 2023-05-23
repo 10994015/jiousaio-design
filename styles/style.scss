@@ -725,6 +725,7 @@ footer{
     right:30px;
     width:50px;
     transition: .3s;
+    z-index: 9999999;
     &:hover{
         transform: rotate(15deg);
     }

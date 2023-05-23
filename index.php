@@ -134,7 +134,7 @@ $workArr = ['合遠', '君天下', '幸福樂', '明築向陽4F', '明築向陽B
 
                 <p>Phone: <span>0930773739</span></p>
 
-                <p>Email: <a href="mailto:h953266583@yahoo.com.tw" >h953266583@yahoo.com.tw</a></p>
+                <p>Email: <a href="mailto:h953266583@yahoo.com.tw" >cy9577@gmail.com</a></p>
 
                 <p>Website: <a href="https://jiousaio.com">jiousaio.com</a></p>
                 </div>
