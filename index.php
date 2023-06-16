@@ -22,9 +22,9 @@ $workArr = ['合遠', '君天下', '幸福樂', '明築向陽4F', '明築向陽B
             <div class="frame" id="menuBtn">
                 <div class="center">
                     <div class="menu-icon">
-                    <div class="line1 no-animation"></div>
-                    <div class="line2 no-animation"></div>
-                    <div class="line3 no-animation"></div>
+                        <div class="line1 no-animation"></div>
+                        <div class="line2 no-animation"></div>
+                        <div class="line3 no-animation"></div>
                     </div>
                 </div>
             </div>
