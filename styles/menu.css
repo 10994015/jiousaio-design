@@ -22,17 +22,14 @@
   width: 18px;
 }
 .menu-icon .line1 {
-  -webkit-animation: animate-line1-rev 0.5s ease-in-out;
-          animation: animate-line1-rev 0.5s ease-in-out;
+  animation: animate-line1-rev 0.5s ease-in-out;
 }
 .menu-icon .line2 {
   margin: 6px 0;
-  -webkit-animation: animate-line2-rev 0.5s ease-in-out;
-          animation: animate-line2-rev 0.5s ease-in-out;
+  animation: animate-line2-rev 0.5s ease-in-out;
 }
 .menu-icon .line3 {
-  -webkit-animation: animate-line3-rev 0.5s ease-in-out;
-          animation: animate-line3-rev 0.5s ease-in-out;
+  animation: animate-line3-rev 0.5s ease-in-out;
 }
 .menu-icon:hover .line1,
 .menu-icon:hover .line2,
@@ -45,33 +42,17 @@
   background: #cccccc;
 }
 .menu-icon.active .line1 {
-  -webkit-animation: animate-line1 0.5s cubic-bezier(0.3, 1, 0.3, 1) forwards;
-          animation: animate-line1 0.5s cubic-bezier(0.3, 1, 0.3, 1) forwards;
+  animation: animate-line1 0.5s cubic-bezier(0.3, 1, 0.3, 1) forwards;
 }
 .menu-icon.active .line2 {
-  -webkit-animation: animate-line2 0.5s cubic-bezier(0.3, 1, 0.3, 1) forwards;
-          animation: animate-line2 0.5s cubic-bezier(0.3, 1, 0.3, 1) forwards;
+  animation: animate-line2 0.5s cubic-bezier(0.3, 1, 0.3, 1) forwards;
 }
 .menu-icon.active .line3 {
-  -webkit-animation: animate-line3 0.5s cubic-bezier(0.3, 1, 0.3, 1) forwards;
-          animation: animate-line3 0.5s cubic-bezier(0.3, 1, 0.3, 1) forwards;
+  animation: animate-line3 0.5s cubic-bezier(0.3, 1, 0.3, 1) forwards;
 }
 
 .no-animation {
-  -webkit-animation: none !important;
-          animation: none !important;
-}
-
-@-webkit-keyframes animate-line1 {
-  0% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(0, 8px, 0) rotate(0deg);
-  }
-  100% {
-    transform: translate3d(0, 8px, 0) rotate(45deg);
-  }
+  animation: none !important;
 }
 
 @keyframes animate-line1 {
@@ -85,16 +66,6 @@
     transform: translate3d(0, 8px, 0) rotate(45deg);
   }
 }
-@-webkit-keyframes animate-line2 {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0);
-    opacity: 0;
-  }
-}
 @keyframes animate-line2 {
   0% {
     transform: scale(1);
@@ -103,20 +74,6 @@
   100% {
     transform: scale(0);
     opacity: 0;
-  }
-}
-@-webkit-keyframes animate-line3 {
-  0% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(0, -8px, 0) rotate(0deg);
-  }
-  90% {
-    transform: translate3d(0, -8px, 0) rotate(145deg);
-  }
-  100% {
-    transform: translate3d(0, -8px, 0) rotate(135deg);
   }
 }
 @keyframes animate-line3 {
@@ -133,17 +90,6 @@
     transform: translate3d(0, -8px, 0) rotate(135deg);
   }
 }
-@-webkit-keyframes animate-line1-rev {
-  0% {
-    transform: translate3d(0, 8px, 0) rotate(45deg);
-  }
-  50% {
-    transform: translate3d(0, 8px, 0) rotate(0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-}
 @keyframes animate-line1-rev {
   0% {
     transform: translate3d(0, 8px, 0) rotate(45deg);
@@ -155,16 +101,6 @@
     transform: translate3d(0, 0, 0) rotate(0deg);
   }
 }
-@-webkit-keyframes animate-line2-rev {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 @keyframes animate-line2-rev {
   0% {
     transform: scale(0);
@@ -173,17 +109,6 @@
   100% {
     transform: scale(1);
     opacity: 1;
-  }
-}
-@-webkit-keyframes animate-line3-rev {
-  0% {
-    transform: translate3d(0, -8px, 0) rotate(135deg);
-  }
-  50% {
-    transform: translate3d(0, -8px, 0) rotate(0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0) rotate(0);
   }
 }
 @keyframes animate-line3-rev {

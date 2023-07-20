@@ -15,6 +15,12 @@ $workArr = ['合遠', '君天下', '幸福樂', '明築向陽4F', '明築向陽B
     <link rel="stylesheet" href="./styles/menu.css">
 </head>
 <body>
+    <div id="loading">
+        <img src="./images/logo.jpg" alt="九霄空間室內設計">
+        <div class="progress-bar">
+            <div class="bar" id="bar"></div>
+        </div>
+    </div>
     <main>
         <a href="https://www.facebook.com/profile.php?id=100054229071553" target="_blank" class="fb" id="fb"><img src="./images/fb.png" alt=""></a>
         <header id="header">
