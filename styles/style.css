@@ -110,6 +110,17 @@ section > .small-title {
   z-index: 99999999;
   flex-direction: column;
 }
+#loading.onload {
+  animation: onload 0.2s linear;
+}
+@keyframes onload {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
 #loading > img {
   width: 80%;
   max-width: 300px;

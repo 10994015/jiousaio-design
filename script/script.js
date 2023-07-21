@@ -28,21 +28,29 @@ const loading = document.getElementById('loading')
 const bar = document.getElementById('bar');
 let barNum = 0
 let timerBar = null
+let onloadTimeBar = null
 timerBar = setInterval(()=>{
     barNum++
-    if(barNum >=95){
+    if(barNum >=30){
         clearInterval(timerBar)
     }
     bar.style.width = `${barNum}%`
     
-}, 10)
+}, 20)
 window.onload = ()=>{
     clearInterval(timerBar)
-    barNum = 100
-    bar.style.width = `${barNum}%`
-    setTimeout(()=>{
-        loading.style.display = "none"
-    }, 1000)
+    barNum = 30
+    onloadTimeBar = setInterval(()=>{
+        barNum++
+        if(barNum >=100){
+            clearInterval(timerBar)
+            loading.classList.add('onload')
+            setTimeout(()=> {
+                loading.style.display = "none"
+            }, 200)
+        }
+        bar.style.width = `${barNum}%`
+    }, 20)
 }
 let workArr = ['合遠', '君天下', '幸福樂', '明築向陽4F', '明築向陽B1-3F', '莉朵', '晴灣', '愛慕', '極光', '權視界'];
 let workObj = {'合遠':9, '君天下':9, '幸福樂':9, '明築向陽4F':9, '明築向陽B1-3F':9, '莉朵':9, '晴灣':7, '愛慕':8, '極光':9, '權視界':6};
