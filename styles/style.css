@@ -302,7 +302,6 @@ section > .small-title {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: none;
   animation: openMenu 0.5s ease-out;
 }
 @keyframes openMenu {

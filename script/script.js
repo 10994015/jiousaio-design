@@ -29,6 +29,8 @@ const bar = document.getElementById('bar');
 let barNum = 0
 let timerBar = null
 let onloadTimeBar = null
+const image = new Image();
+image.src = "../images/bg_3.jpg"
 timerBar = setInterval(()=>{
     barNum++
     if(barNum >=30){
@@ -40,6 +42,7 @@ timerBar = setInterval(()=>{
 window.onload = ()=>{
     clearInterval(timerBar)
     barNum = 30
+    menu.style.display = "none"
     onloadTimeBar = setInterval(()=>{
         barNum++
         if(barNum >=100){

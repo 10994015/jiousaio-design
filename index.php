@@ -16,7 +16,7 @@ $workArr = ['合遠', '君天下', '幸福樂', '明築向陽4F', '明築向陽B
 </head>
 <body>
     <div id="loading">
-        <img src="./images/logo.jpg" alt="九霄空間室內設計">
+        <img src="./images/logo2.png" alt="九霄空間室內設計">
         <div class="progress-bar">
             <div class="bar" id="bar"></div>
         </div>
